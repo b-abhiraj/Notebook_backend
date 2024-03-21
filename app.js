@@ -9,7 +9,7 @@ app.use(express.json());
 const PORT = 4000
 app.use(cors())
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
     next();
 });
 
